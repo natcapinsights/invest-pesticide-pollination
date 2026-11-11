@@ -6,7 +6,7 @@ An [InVEST](https://naturalcapitalproject.stanford.edu/software/invest) plugin t
 
 Starting from a land-use/land-cover (LULC) raster, this model chains together three analyses:
 
-1. **Pollinator habitat quality and marginal value** — runs the [`nci_pollination`](https://github.com/natcapinsights/nci-pollination) marginal-value model (itself built on the InVEST Pollination model) to estimate current pollinator supply and the marginal value of restoring each pixel, per species/guild.
+1. **Pollinator habitat quality and marginal value** — runs the [`nci_pollination`](https://github.com/natcapinsights/invest-pollination) marginal-value model (itself built on the InVEST Pollination model) to estimate current pollinator supply and the marginal value of restoring each pixel, per species/guild.
     - Requires the typical InVEST Pollinator model input data, plus an additional LULC raster representing the potential restoration scenario.
 2. **Pesticide exposure and hazard** — reclassifies the landscape by pesticide application rate, spreads it via a wind-drift kernel, convolves it with each species' foraging range, and converts the resulting pollen concentration into a per-species pesticide hazard map (exposure relative to a toxicity threshold).
     - Requires an additional `pesticide_application_rate` field in the biophysical table and additional `toxicity_threshold` and `pollen_consumption_rate` fields in the guild table, along with new model arguments of `pesticide_name` and `drift_distance_m`.
