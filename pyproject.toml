@@ -3,7 +3,7 @@ requires = ["setuptools>=64", "wheel", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "invest_nci_pesticide_pollination"
+name = "invest_pesticide_pollination"
 # dynamic = ["version"]  # TODO Uncomment once we move to git hosting for plugin
 version = "0.1.0"  # TODO Remove once we move to git hosting for plugin
 description = "The NCI Pesticide Pollination model extends the InVEST Pollination model to incorporate landscape pesticide application rates and subsequent exposure risks to pollinators."
@@ -41,8 +41,7 @@ api_version = "v1"
 # This is distinct from the project.name defined above (these names are often the same, 
 # but don't have to be). Unlike the project.name, this name should not contain hyphens 
 # or other special characters because it will be used in an import statement.
-package_name = "invest_nci_pesticide_pollination"
-# QUESTION How do you balance the plugin vs the python package install in terms of naming conventions?
+package_name = "invest_pesticide_pollination"
 
 # List of conda dependencies to install into the plugin's conda environment. 
 # Usually this includes python itself and any non-python dependencies
