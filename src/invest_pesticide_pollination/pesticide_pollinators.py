@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 pathlike = str | Path
 
-_INDEX_NODATA = natcap.invest.pollination._INDEX_NODATA
+_INDEX_NODATA = natcap.invest.pollination.pollination._INDEX_NODATA
 
 SIGNED_NODATA_VAL = -1
 UNSIGNED_NODATA_VAL = 0
