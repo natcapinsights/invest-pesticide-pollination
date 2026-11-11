@@ -107,7 +107,7 @@ DTYPE = np.result_type(
     *[np.min_scalar_type(v) for v in COMBINATION_DICT["values"]]
 ).type
 if DTYPE in [np.float16]:
-    DTYPE = np.float32  # NOTE: GDAL<3.11 doesn't support float16 rasters
+    DTYPE = np.float32  # NOTE: GDAL pre-3.11 doesn't support float16 rasters
 GDAL_TYPE, _ = pygeoprocessing.geoprocessing._numpy_to_gdal_type(DTYPE)
 
 

@@ -24,7 +24,7 @@ Requires Python ≥3.10 and GDAL. Depends on `natcap.invest` and `pygeoprocessin
 
 ## Usage
 
-This package is an InVEST plugin (`package_name = invest_invest_pesticide_pollination` in [pyproject.toml](pyproject.toml)) and can be run through the `natcap.invest` plugin interface.
+This package is an InVEST plugin (`package_name = invest_pesticide_pollination` in [pyproject.toml](pyproject.toml)) and can be run through the `natcap.invest` plugin interface.
 
 ## New data requirements
 
