@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invest_nci_pesticide_pollination"
+# dynamic = ["version"]  # TODO Uncomment once we move to git hosting for plugin
+version = "0.1.0"  # TODO Remove once we move to git hosting for plugin
+description = "The NCI Pesticide Pollination model extends the InVEST Pollination model to incorporate landscape pesticide application rates and subsequent exposure risks to pollinators."
+authors = [
+    { name = "Chris Nootenboom", email = "chris.nootenboom@natcapinsights.com" },
+    { name = "Eric Lonsdorf", email = "eric.lonsdorf@natcapinsights.com" },
+]
+maintainers = [{ name = "Chris Nootenboom", email = "chris.nootenboom@natcapinsights.com" }]
+license = "Apache-2.0"
+readme = "README.md"
+license-files = ["LICENSE"]
+requires-python = ">=3.14"
+dependencies = [
+    "natcap.invest>=3.20",
+    "pygeoprocessing",
+    "gdal",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "pyyaml",
+]
+
+[tool.setuptools_scm]
+# Use default configuration. A warning is issued if this section is absent.
+
+[tool.natcap.invest]
+# This is the plugin API version that this plugin uses.
+# invest uses this to determine whether it can run this plugin.
+# "v1" is the current and only version at this time
+api_version = "v1"
+
+# This is the importable package name of the plugin. It should match the name of the 
+# package directory. # NOTE It MUST begin with "invest". It is included here so that 
+# natcap.invest knows how to import the plugin. 
+# This is distinct from the project.name defined above (these names are often the same, 
+# but don't have to be). Unlike the project.name, this name should not contain hyphens 
+# or other special characters because it will be used in an import statement.
+package_name = "invest_nci_pesticide_pollination"
+# QUESTION How do you balance the plugin vs the python package install in terms of naming conventions?
+
+# List of conda dependencies to install into the plugin's conda environment. 
+# Usually this includes python itself and any non-python dependencies
+# like the GDAL binaries. Packages listed here will be installed into the
+# plugin environment prior to the other dependencies, so you may wish to list
+# packages here that are difficult to install with pip.
+#
+# Only the conda-forge channel is supported. These dependencies MUST be available on 
+# conda-forge. We have disabled the default channel due to Anaconda's licensing.
+#
+# Python is installed into the plugin environment by default, but you may 
+# include it here if you wish to specify a particular version.
+conda_dependencies = [
+  "python==3.14",  
+  "gdal",
+  "pygeoprocessing",  # install from conda-forge rather than building wheel with pip
+  "natcap.invest>=3.20.0",  # install from conda-forge rather than building wheel with pip
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "pyyaml",
+]

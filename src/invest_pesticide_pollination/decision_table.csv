@@ -1,0 +1,28 @@
+﻿code,decision_code,decision_label,decision_color,pesticide_toxicity_value,habitat_quality,restoration_potential_label,pesticide_toxicity_label,habitat_quality_label,restoration_potential_label
+1,1,Nothing,#f7f7f7,1,1,1,Low,Low,Low
+2,3,Maybe Restore,#e6f5d0,1,1,2,Low,Low,Med
+3,5,Restore,#7fbc41,1,1,3,Low,Low,High
+4,1,Nothing,#f7f7f7,1,2,1,Low,Med,Low
+5,3,Maybe Restore,#e6f5d0,1,2,2,Low,Med,Med
+6,8,Restore + Protect,#b8e186,1,2,3,Low,Med,High
+7,4,Protect,#4d9221,1,3,1,Low,High,Low
+8,4,Protect,#4d9221,1,3,2,Low,High,Med
+9,8,Restore + Protect,#b8e186,1,3,3,Low,High,High
+10,1,Nothing,#f7f7f7,2,1,1,Med,Low,Low
+11,1,Nothing,#f7f7f7,2,1,2,Med,Low,Med
+12,7,Reduce + Restore,#de77ae,2,1,3,Med,Low,High
+13,1,Nothing,#f7f7f7,2,2,1,Med,Med,Low
+14,2,Maybe Something,#fde0ef,2,2,2,Med,Med,Med
+15,7,Reduce + Restore,#de77ae,2,2,3,Med,Med,High
+16,6,Reduce + Protect,#c51b7d,2,3,1,Med,High,Low
+17,6,Reduce + Protect,#c51b7d,2,3,2,Med,High,Med
+18,7,Reduce + Restore,#de77ae,2,3,3,Med,High,High
+19,1,Nothing,#f7f7f7,3,1,1,High,Low,Low
+20,1,Nothing,#f7f7f7,3,1,2,High,Low,Med
+21,7,Reduce + Restore,#de77ae,3,1,3,High,Low,High
+22,1,Nothing,#f7f7f7,3,2,1,High,Med,Low
+23,2,Maybe Something,#fde0ef,3,2,2,High,Med,Med
+24,9,"Reduce, Protect + Restore",#f1b6da,3,2,3,High,Med,High
+25,6,Reduce + Protect,#c51b7d,3,3,1,High,High,Low
+26,6,Reduce + Protect,#c51b7d,3,3,2,High,High,Med
+27,9,"Reduce, Protect + Restore",#f1b6da,3,3,3,High,High,High
