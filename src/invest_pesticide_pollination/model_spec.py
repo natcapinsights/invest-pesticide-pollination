@@ -2,7 +2,7 @@ from natcap.invest import gettext
 from natcap.invest import spec
 from natcap.invest.spec import u
 
-from nci_pollination import MODEL_SPEC as input_model_spec
+from .nci_pollination.model_spec import MODEL_SPEC as input_model_spec
 
 # Define component parts of the model spec prior to creation, so as to use the update= argument correctly
 

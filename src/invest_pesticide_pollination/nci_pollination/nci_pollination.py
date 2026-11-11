@@ -13,7 +13,7 @@ import pygeoprocessing
 from natcap.invest import validation
 
 # NCI
-from .nci_pollination_model_spec import MODEL_SPEC
+from .model_spec import MODEL_SPEC
 
 # Logging
 LOGGER = logging.getLogger(__name__)

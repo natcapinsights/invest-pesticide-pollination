@@ -15,7 +15,7 @@ import natcap.invest.pollination
 import natcap.invest.utils
 from natcap.invest import validation
 
-import nci_pollination as nci_pollination
+from . import nci_pollination
 
 from .model_spec import MODEL_SPEC
 from .utils import (
